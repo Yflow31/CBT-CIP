@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="0dp"
+    android:backgroundTint="@color/faintwhite"
+    android:layout_margin="4dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="15dp">
+
+        <ImageView
+            android:id="@+id/main_page_item_image"
+            android:layout_width="30dp"
+            android:layout_centerVertical="true"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            />
+
+        <TextView
+            android:fontFamily="@font/satoshi_bold"
+            android:textColor="@color/white"
+            android:layout_centerVertical="true"
+            android:id="@+id/main_page_item_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_marginStart="16dp"
+            android:layout_toEndOf="@+id/main_page_item_image"
+            android:text="Currency Name" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/baseline_keyboard_arrow_right_24" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
